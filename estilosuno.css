@@ -1,0 +1,121 @@
+.titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    color: #F0B429;
+   /* font-size: larger;*/
+   width: 100%;
+ }
+
+.color_azul {
+    color: blue;
+}
+
+.menu {
+  padding: 10px;
+  width: 100%;
+  background-color:  #005883;
+  font-size: x-large;
+  color: white; 
+  font-weight: bold;
+
+}
+
+.menu2 {
+    padding: 10px;
+    width: 25%;
+    background-color:  #005883;
+    font-size: x-large;
+    color: white;
+    
+}
+
+.submenu {
+  padding: 10px;
+  background-color: #F0B429;
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  font-weight: inherit;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.tabla {
+    text-align: justify;
+    width: 100%;
+    font-size: small;
+    padding:3px 5px 5px 1px;
+    color: #005883;
+       
+    }
+
+.parrafo {
+  text-align: justify;
+  width: 100%;
+  font-size: medium;
+  padding:3px 5px 5px 1px;
+  color: #005883;
+
+}
+
+.imagen {
+    text-align: right;
+    padding:1px 95px 1px 100px;
+    float: left;
+    line-height: 30px;
+    width:8%;
+    
+}
+
+.foto {
+  
+  padding:1px 30px 1px 2px;
+  float: left;
+  line-height: 30px;
+  width:30%;
+
+}
+
+.autor {
+text-align: justify;
+color:  #F0B429;
+font-size: x-large;
+width:30%;
+
+}
+
+.heading {
+     color: white; 
+}
+
+/*nav li {
+  display: inline;
+  width:13%;
+  padding:20px 15px 40px 10px;
+  background-color: #005883;
+  text-align: left;
+  color:white;
+  font-size: large;
+  /*font-weight: bold;
+  float: left;
+  overflow: hidden;
+  line-height: 30px;
+ 
+}*/
+
+  a {
+    text-decoration: none;
+    color:white;
+  }
+
+  .piepagina {
+    background-color:#F0B429;
+    text-align: center;
+    width: 100%;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ 

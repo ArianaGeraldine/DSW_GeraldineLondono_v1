@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosuno.css">
+</head>
+<body>
+    <br><br>
+
+    <table>
+        <td>
+    <h1 class="titulo">
+        Propiedades básicas de CSS, Display: inline, block, inline-block
+    </h1>
+        </td>
+    </td>
+    <td class="imagen">
+        <img src="logounad2.png" alt="Unad">
+    </td>
+</table>
+
+    <table class="menu">
+        <tr>
+        <td>
+    <div> 
+        <td><a href="index.html"> Inicio</a></td>
+        <td><a href="conceptos01.html"> Conceptos</a></td>  
+        <td><a href="recursos01.html"> Recursos </a></td>  
+        <td><a href="autor.html"> Autor</a></td>     
+        <td><a href="autoevaluacion01.html"> Autoevaluación</a></td>  
+        
+    </div>
+        </td>
+        </tr>
+    </table>
+
+    <h2>Bienvenido(@)s a la sección de Conceptos</h2>
+
+    <p class="parrafo">Elementos en línea</p>
+    <p class="parrafo">Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML no afectan en absoluto al flujo de los demás elementos, limitándose a marcar ciertos fragmentos con una determinada semántica y dejando que el texto y otros elementos contiguos sigan fluyendo en la misma línea, colocándose a ambos lados de dicho elemento.</p>
+    <p class="parrafo">Ejemplos de estas etiquetas son: "a", "em","del"... y quizá la más útil de todas: la etiqueta "span", que se usa para envolver elementos en-línea para darles estilo sin cambiar su comportamiento. A estos elementos HTML se les llama elementos de línea o, incluso más a menudo, por su denominación en inglés: elementos "inline".</p>
+    <p class="parrafo">Por ejemplo, si tenemos el siguiente estilo CSS:</p>
+        
+    <table>
+        <tr>
+        <td>
+            .caja {
+                background-color: yellow;
+                border: 1px solid black;
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                margin: 50px 10px;
+            }
+        </td>
+        </tr>
+    </table>
+
+    <p class="parrafo">Y un código HTML tan sencillo como este:</p>
+      
+    <table>
+        <tr>
+            <td>
+               <img src="codigo.png" alt="codigo">
+            </td>
+    </table>
+
+    <p class="parrafo">Lo que obtenemos en el navegador con este código es esta representación</p>
+    <table>
+        <tr>
+        <td>
+            <p>Lorem ipsum dolor...</p>
+            <span class="caja">CAJA 1</span>
+            <span class="caja">CAJA 2</span>
+            <span class="caja">CAJA 3</span>
+            <p>Lorem ipsum dolor...</p>
+        </td>
+        </tr>
+    </table>
+
+    <p class="parrafo">Como vemos las cajas tienen un estilo in-line porque son spans, se alinean unas a continuación de otras, pero no se respetan los anchos, los altos ni los márgenes verticales de los elementos.</p>
+
+    <p class="parrafo">Elementos en bloque</p>
+    <p class="parrafo">Por el contrario, ciertas etiquetas se renderizan en el navegador en líneas independientes, no mezcladas con el resto del texto.  Ejemplos de estas etiquetas son los encabezados (h1 hasta h6), las citas en bloque (blockquote), por supuesto los párrafos (p), y quizá la más conocida de todas que es la etiqueta div usada normalmente para envolver a otros elementos. A estos elementos se les denomina elementos de bloque</p>
+    <p class="parrafo">Siguiendo con el mismo ejemplo anterior, si simplemente sustituimos los span por elementos div, ahora las cajas son elementos de bloque, y se renderizarán de la siguiente manera:</p>
+
+    <table>
+        <tr>
+            <td>
+               <img src="codigodos.png" alt="codigodos">
+            </td>
+    </table>
+
+    <p class="parrafo">Es decir, ahora los elementos no fluyen como si fueran texto, sino que por defecto se renderizan en líneas independientes. Además, los elementos de bloque respetan los anchos y altos y los márgenes verticales, tal y como se observa en la figura anterior (no se ha cambiado nada más que el tipo de etiqueta: los estilos CSS son exactamente los mismos).</p>
+
+    <p class="parrafo">Si quieres encontrar más propiedades de CSS oprime el siguiente botón:</p>
+    <table class="submenu">
+        <tr>
+        <td>
+    <div>    
+        <td><a href="conceptos02.html"> Conceptos 02</a></td> 
+    </div>     
+       </td>
+       </tr>
+    </table>
+    <br>
+  
+    <table class="piepagina">
+        <tr>
+           <td>
+           Todos los derechos reservados @Unad<br><br>
+           Universidad Nacional Abierta y a Distancia UNAD - Sede José Celestino Mutis<br>
+           Calle 14 Sur No. 23 - 14 Restrepo - Bogotá D.C.<br>
+           </td>
+        </tr>
+    </table>
+</body>
+</html>
