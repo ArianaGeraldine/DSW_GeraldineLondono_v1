@@ -322,7 +322,7 @@ nav li {
  
 }
 
-  a.boton {
+ /* a.boton {
     text-decoration: none;
     background-color:#005883;
     color:white;
@@ -345,7 +345,7 @@ nav li {
   a.boton:active{
   background: #F0B429;
 
-  }
+  }*/
 
 
   .piepagina {
@@ -408,6 +408,7 @@ nav li {
     -moz-column-gap: 4rem;/*Firefox*/
     column-gap: 4rem;
 
+    column-rule: 1px solid #bbb;
     /*-webkit-column-rule: 5px solid rgb(75, 180, 149);
     -moz-column-rule: 5px solid rgb(75, 180, 149);
     column-rule: 5px solid rgb(75, 180, 149);*/
