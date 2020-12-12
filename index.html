@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVI Diseño de Sitios Web</title>
+    <meta author="Adriana Geraldine Londoño">
+    <title>Diseño de Sitios Web</title>
     <link rel="stylesheet" href="estilosuno.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        
+      $(document).ready(function(){
+          $("#menuprincipal").prepend('<div id="menu-entrada">Menú</div>');
+          $("#menu-entrada").click(function(){
+             $("#menu").slideToggle();
+
+          });
+
+      });
+
+    </script>
+
 </head>
 <body>
     <br>
@@ -34,7 +51,7 @@
     </nav>--> 
  
   
-    
+    <!-- comentarios
     <table class="menu">
         <tr>
         <td>
@@ -47,10 +64,128 @@
     </div>
         </td>
         </tr>
-    </table>
+    </table>-->
 
+      <nav id="menuprincipal">
+          <ul id="menu">
+              <li><a href="index.html">Inicio</a></li>
+            
+            <li>  
+               <li><a href="conceptos01.html">Conceptos</a>
+               <ul>
+                <li><a href="conceptos02.html">Conceptos 02</a>
+               </ul>
+            </li> 
+
+            <li>
+                <li><a href="recursos01.html">Recursos </a>
+                 <ul>
+                   <li><a href="recursos02.html">Recursos 02</a>
+                 </ul>
+              </li> 
+
+              <li><a href="autor.html">Autor</a></li>
+
+            <li>
+              <li><a href="autoevaluacion01.html">Autoevaluación </a>
+               <ul>
+                 <li><a href="autoevaluacion02.html">Autoevaluacion02</a>
+                 <li><a href="evaluacion.html">Evaluación Sitio</a>
+               </ul>
+            </li>
+            
+           </li>
+           </ul>
+
+        </nav>
+
+        <div class="three-columns">
+          <p>
+            <h4>Objetivo general</h4>
+            <p>Analizar y diseñar un OVI para dar a conocer a los estudiantes de la UNAD las propiedades básicas de CSS</p>
+           
+            <h4> Contenido </h4>
+            <p>Bienvenidos al curso de Diseño de sitios web, en este espacio encontrarás propiedades básicas de CSS, Display: Inline, Block, Inline-Block y mucho más.</p>
+         
+            <h4>Objetivos específicos</h4>
+             <ul>  
+                <li>Examinar y comprender que son las CSS y para que se usan en el desarrollo de una página o en el diseño de un sitio web </li> 
+                 <li>Considerar e identificar las propiedades básicas con CSS</li> 
+                 <li>Observar y reconocer las diferencias entre los modos de visualización de elementos en línea, elementos en bloque y la combinación de los dos</li> 
+                 <li>Generar destrezas en el estudiante para el desarrollo de sistios web a traves del uso y/o aplicación de HTML y CSS3</li>
+             </ul>
+
+             <h4>Materiales utilizados</h4>
+             <ul>
+                <li>https://www.youtube.com/watch?v=VMzckBNgoNc </li>
+                <li>https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx</li>
+                <li>https://openwebinars.net/blog/que-es-css/</li>
+             </ul>
+           
+            <!-- <h4>Para que sirve CSS</h4>-->
+            <p>
+              El código CSS hace la vida más facil al desarrollador front-end al separar la estructura de un documento HTML de su presentación.          
+              <!--    dicho de otro modo el HTML actuaría como el esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la define su aspecto final-->
+            </p>
+         </p>
+
+         <p>
+            <aside>
+                <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/hashtag/UNADOferta?src=hash&amp;ref_src=twsrc%5Etfw">#UNADOferta</a> Conviértete en un experto y comprende el impacto de las soluciones y de los productos tecnológicos que investiga y desarrolla en el campo de las Redes de Nueva Generación.✔️<br><br>¡Matricúlate ya!👉<a href="https://t.co/c34UpbUfmu">https://t.co/c34UpbUfmu</a> <a href="https://t.co/mI5gtSVADd">pic.twitter.com/mI5gtSVADd</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1326625545967316995?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
+
+         </p>
+
+        <p>
+
+
+
+
+           <h4>Buenas y malas prácitcas con CSS3</h4> 
+            
+         <p>CSS es un lenguaje demasiado permisivo por lo que es fácil caer en malas prácticas, la estructura es como la arquitectura donde va a ir cada cosa.
+
+         Cuando se habla de arquitectura es que debe ir a la derecha, a la izquierda, arriba o abajo, esa es la estructura o el layout, y lo visual el skin o el template hace referencia al adorno.
+
+            El template son colores, tipografía, márgenes internos, los padding, todas esas cosas le dan un estilo bonito e identificativo a cada componente web.</p>
+
+            <p> CSS nos permite hacer todo eso, sin embargo CSS tiene un gran problema y es que no es un lenguaje de programación,
+
+            al no ser un lenguaje de programación es un lenguaje demasiado permisivo y se cree que esa permisividad no es buena,           
+           
+           por el contrario, al no ser un lenguaje de programación este hace que mucha gente demore mucho en agarrar un nivel decente en CSS
+
+            no porque este sea un lenguaje extremadamente complicado como lenguaje, en si no es tan díficil, la dificultad llega cuando debes hacer croswoser
+
+            se debe entender como se comporta en cada navegador, tienes que entender como funciona internamente y como se interpretan las propiedades</p>
+        
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <a href="https://accounts.google.com/" target="blank">
+          <img src="imagenes/gmail.png" alt="gmail"></a> 
+
+        <a href="https://www.youtube.com/" target="blank">
+          <img src="imagenes/youtube.png" alt="youtube"></a> 
+
+        <a href="https://es-la.facebook.com" target="blank"> 
+          <img src="imagenes/facebook.png" alt="facebook"></a>
+    
+        <a href="https://www.instagram.com" target="blank">
+          <img src="imagenes/instagram.png" alt="instagram"></a> 
       
-  
+      </div>
+
+
+
+<!--  
 <table class="tabla">
     <tr>
         <td>
@@ -152,6 +287,7 @@
 
     </tr>
 </table>
+-->
 
 <table class="piepagina">
     <tr>

@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilosuno.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        
+      $(document).ready(function(){
+          $("#menuprincipal").prepend('<div id="menu-entrada">Menú</div>');
+          $("#menu-entrada").click(function(){
+             $("#menu").slideToggle();
+
+          });
+
+      });
+
+    </script>
 </head>
 <body>
     
@@ -21,6 +35,7 @@
 </td>
 </table>
 
+<!--
     <table class="menu">
         <tr>
         <td>
@@ -33,8 +48,40 @@
     </div>
         </td>
         </tr>
-    </table>
+    </table>-->
 
+    <nav id="menuprincipal">
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+          
+          <li>  
+             <li><a href="conceptos01.html">Conceptos</a>
+             <ul>
+              <li><a href="conceptos02.html">Conceptos 02</a>
+             </ul>
+          </li> 
+
+          <li>
+              <li><a href="recursos01.html">Recursos </a>
+               <ul>
+                 <li><a href="recursos02.html">Recursos 02</a>
+               </ul>
+            </li> 
+
+            <li><a href="autor.html">Autor</a></li>
+
+          <li>
+            <li><a href="autoevaluacion01.html">Autoevaluación </a>
+             <ul>
+               <li><a href="autoevaluacion02.html">Autoevaluacion02</a>
+               <li><a href="evaluacion.html">Evaluación Sitio</a>
+             </ul>
+          </li>
+          
+         </li>
+         </ul>
+
+      </nav>
     <table class="foto">
         <tr>
             <td>

@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilosuno.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        
+      $(document).ready(function(){
+          $("#menuprincipal").prepend('<div id="menu-entrada">Menú</div>');
+          $("#menu-entrada").click(function(){
+             $("#menu").slideToggle();
+
+          });
+
+      });
+
+    </script>
+
 </head>
 <body>
     <br><br>
@@ -21,20 +36,38 @@
     </td>
 </table>
 
-    <table class="menu">
-        <tr>
-        <td>
-    <div> 
-        <td><a href="index.html"> Inicio</a></td>
-        <td><a href="conceptos01.html"> Conceptos</a></td>  
-        <td><a href="recursos01.html"> Recursos </a></td>  
-        <td><a href="autor.html"> Autor</a></td>     
-        <td><a href="autoevaluacion01.html"> Autoevaluación</a></td>  
-        
-    </div>
-        </td>
-        </tr>
-    </table>
+    
+<nav id="menuprincipal">
+    <ul id="menu">
+        <li><a href="index.html">Inicio</a></li>
+      
+      <li>  
+         <li><a href="conceptos01.html">Conceptos</a>
+         <ul>
+          <li><a href="conceptos02.html">Conceptos 02</a>
+         </ul>
+      </li> 
+
+      <li>
+          <li><a href="recursos01.html">Recursos </a>
+           <ul>
+             <li><a href="recursos02.html">Recursos 02</a>
+           </ul>
+        </li> 
+
+        <li><a href="autor.html">Autor</a></li>
+
+      <li>
+        <li><a href="autoevaluacion01.html">Autoevaluación </a>
+         <ul>
+           <li><a href="autoevaluacion02.html">Autoevaluacion02</a></li>
+         </ul>
+      </li>
+      
+     </li>
+     </ul>
+
+  </nav>
 
     <h2>Bienvenido(@)s a la sección de Conceptos</h2>
 
@@ -96,15 +129,15 @@
     <p class="parrafo">Es decir, ahora los elementos no fluyen como si fueran texto, sino que por defecto se renderizan en líneas independientes. Además, los elementos de bloque respetan los anchos y altos y los márgenes verticales, tal y como se observa en la figura anterior (no se ha cambiado nada más que el tipo de etiqueta: los estilos CSS son exactamente los mismos).</p>
 
     <p class="parrafo">Si quieres encontrar más propiedades de CSS oprime el siguiente botón:</p>
-    <table class="submenu">
+    <!--<table class="submenu">
         <tr>
         <td>
     <div>    
-        <td><a href="conceptos02.html"> Conceptos 02</a></td> 
+        <td><a href="conceptos02.html"> Conceptos 02</a></td>
     </div>     
        </td>
        </tr>
-    </table>
+    </table>-->
     <br>
   
     <table class="piepagina">

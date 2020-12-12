@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diseño de Sitios Web</title>
     <link rel="stylesheet" href="estilosuno.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        
+      $(document).ready(function(){
+          $("#menuprincipal").prepend('<div id="menu-entrada">Menú</div>');
+          $("#menu-entrada").click(function(){
+             $("#menu").slideToggle();
+
+          });
+
+      });
+
+    </script>
+
+    
 </head>
 <body>
     <br>
@@ -20,6 +37,7 @@
     </td>
 </table>
 
+<!-- 
     <table class="menu">
         <tr>
         <td>
@@ -32,19 +50,79 @@
     </div>
         </td>
         </tr>
-    </table>
+    </table>-->
 
-    <h2>Bienvenido(@)s a la sección de Autoevaluación</h2>
+    <nav id="menuprincipal">
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+          
+          <li>  
+             <li><a href="conceptos01.html">Conceptos</a>
+             <ul>
+              <li><a href="conceptos02.html">Conceptos 02</a>
+             </ul>
+          </li> 
+
+          <li>
+              <li><a href="recursos01.html">Recursos </a>
+               <ul>
+                 <li><a href="recursos02.html">Recursos 02</a>
+               </ul>
+            </li> 
+
+            <li><a href="autor.html">Autor</a></li>
+
+          <li>
+            <li><a href="autoevaluacion01.html">Autoevaluación </a>
+             <ul>
+               <li><a href="autoevaluacion02.html">Autoevaluacion02</a>
+                <li><a href="evaluacion.html">Evaluación Sitio</a>
+            </li>
+             </ul>
+          </li>
+          
+         </li>
+         </ul>
+
+      </nav>
+
+    <h2>Bienvenido(@)s a la sección de Autoevaluación</h2><br>
     
-    <table class="submenu">
+    <table class="foto">
+        <tr>
+            <td>
+               <img src="imagenes/HTML5-CSS3.png" alt="Fotografía">
+            </td>
+    </table>
+    <p>
+      Quieres recordar algunos conceptos, te invitamos a que realizar la siguiente actividad para calificar cuanto sabes
+
+    </p>
+
+    <p>
+      Oprime el siguiente ícono para empezar
+    </p>
+   <!-- <table class="submenu">
         <tr>
         <td>
     <div>    
-        <td><a href="autoevaluacion02.html"> Autoevaluación 02</a></td> 
+    
     </div>     
        </td>
        </tr>
-    </table>
+       <td>
+      
+    </td>
+    <td>
+    
+    </td>
+    </table>-->
+
+    <a href="https://es.educaplay.com/juego/7907058-propiedades_basicas_de_css.html" target="blank"> 
+        <img src="imagenes/sopa-letras.png"></a>
+
+     
+
     <br>
     <br>
     <br>
